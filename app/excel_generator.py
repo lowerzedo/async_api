@@ -1,4 +1,6 @@
 import pandas as pd
+from models.order import *
+from models.sale import *
 
 def create_excel(orders, sales):
     df_orders = pd.DataFrame(orders)

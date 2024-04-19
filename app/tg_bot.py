@@ -1,11 +1,11 @@
-from aiogram import Bot, types
-from aiogram.dispatcher import Dispatcher
-from aiogram.utils import executor
+from aiogram import Bot, Dispatcher, executor, types
 from datetime import datetime
+import os
+
 
 TG_BOT_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
-bot = Bot(token='YOUR_TELEGRAM_BOT_TOKEN')
+bot = Bot(token=TG_BOT_TOKEN)
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['report'])
