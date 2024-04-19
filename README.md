@@ -1,4 +1,4 @@
-# Project Title
+# Async api
 
 Async server to communicate with WB APIs. It fetches data from /sales and /orders endpoints, saves them in Postrgres DB in AWS, creates report in Excel and finally sends it as a message in Telegram using tg bot.
 
